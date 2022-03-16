@@ -26,5 +26,4 @@ Sirven para mapear el contenedor sin tener que recontruir la imagen con ayuda de
 
 - Crear contenedor y eliminarlo cuando se baje o ya no se use, solo para desarrollo: _docker run --name myapp_c_nodemon -p 4000:4000 --rm myapp:nodemon_
 - Crear contenedor mapeado con local Volumenes: _docker run --name myapp_c_nodemon -p 4000:4000 --rm -v C:\Users\JLMEI\Documents\Programacion\Docker\api:/app myapp:nodemon_
-- Incluyendo node*modules para volumen: \_docker run --name myapp_c_nodemon -p 4000:4000 --rm -v C:\Users\JLMEI\Documents\Programacion\Docker\api:/app -v /app/node_modules myapp:nodemon*
--
+- Incluyendo nodemodules para volumen: _docker run --name myapp_c_nodemon -p 4000:4000 --rm -v C:\Users\JLMEI\Documents\Programacion\Docker\api:/app -v /app/node_modules myapp:nodemon_
